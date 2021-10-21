@@ -1,0 +1,3 @@
+Elevator stats
+Elevator 1| People taken UP: 4/ Weight: 275.00464906967744| People taken DOWN: 5/ Weight: 405.595287056985
+Elevator 2| People taken UP: 1/ Weight: 45.8827391017307| People taken DOWN: 9/ Weight: 451.63225944663856

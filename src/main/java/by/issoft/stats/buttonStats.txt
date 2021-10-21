@@ -1,0 +1,4 @@
+Button stats
+Floor 1| UP pressed: 1 times| DOWN pressed: 0 times
+Floor 2| UP pressed: 1 times| DOWN pressed: 2 times
+Floor 3| UP pressed: 0 times| DOWN pressed: 1 times

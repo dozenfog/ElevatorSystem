@@ -1,0 +1,4 @@
+Floor stats
+Floor 1| People arrived from UP: 13| People arrived from DOWN: 0| People left for UP: 4| People left for DOWN: 0
+Floor 2| People arrived from UP: 1| People arrived from DOWN: 1| People left for UP: 1| People left for DOWN: 13
+Floor 3| People arrived from UP: 0| People arrived from DOWN: 4| People left for UP: 0| People left for DOWN: 1

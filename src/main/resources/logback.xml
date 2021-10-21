@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="LOG_DIR" value="src/main/java/by/issoft/logs"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{46} - %msg%n</Pattern>
+        </encoder>
+    </appender>
+    <appender name="FLOOR-FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_DIR}/Floor.log</file>
+        <append>false</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{46} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ELEVATOR-FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_DIR}/Elevator.log</file>
+        <append>false</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{46} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="BUTTON-SWITCH-FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_DIR}/ButtonSwitchDistributor.log</file>
+        <append>false</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{46} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ELEVATOR-CONTROLLER-FILE" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_DIR}/ElevatorController.log</file>
+        <append>false</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{46} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <logger name="floorLogger" level="DEBUG" additivity="true">
+        <appender-ref ref="FLOOR-FILE"/>
+    </logger>
+
+    <logger name="elevatorLogger" level="DEBUG" additivity="true">
+        <appender-ref ref="ELEVATOR-FILE"/>
+    </logger>
+
+    <logger name="buttonSwitchLogger" level="DEBUG" additivity="true">
+        <appender-ref ref="BUTTON-SWITCH-FILE"/>
+    </logger>
+
+    <logger name="elevatorControllerLogger" level="DEBUG" additivity="true">
+        <appender-ref ref="ELEVATOR-CONTROLLER-FILE"/>
+    </logger>
+</configuration>
