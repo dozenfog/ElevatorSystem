@@ -1,5 +1,5 @@
 # Алгоритм работы системы
-В проекте ключевыми являются классы Building, Floor, Elevator, Elevator Controller. Я попыталась реализовать паттерн Consumer-Producer, использовала его в нескольких местах, так что Elevator Controller является Consumer по отношению к Floor (который Producer) и Producer по отношению к Elevators (они Consumers). 
+В проекте ключевыми являются классы Building, Floor, Elevator, Elevator Controller. Был реализован паттерн Consumer-Producer, так что Elevator Controller является Consumer по отношению к Floor (который Producer) и Producer по отношению к Elevators (они Consumers). 
 Разделяемый ресурс- Crowd между Elevator Controller и Floor и Elevator Task между Elevator и Elevator Controller. При генерации Crowds в Floors нажимаются Buttons, затем они отпускаются согласно этому же паттерну между Elevator (Producer) и ButtonSwitchDistributor (Consumer) в качестве Button Switch Message.
 Паттерн реализован с помощью Blocking Queues.
 ## Алгоритм подбора лифтов
